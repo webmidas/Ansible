@@ -1,7 +1,7 @@
 ---
 - name: install start and enable httpd
   gather_facts: false
-  hosts: ansible1
+  hosts: vultr-rocky
   tasks:
   - name: install package
     package:
@@ -19,4 +19,4 @@
   tasks:
   - name: test httpd access
     uri:
-      url: http://ansible1
+      url: http://vrocky1
